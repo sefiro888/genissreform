@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genissreform | Reformas Integrales en Madrid | Presupuesto Gratis</title>
+    <meta name="description" content="Especialistas en reformas integrales en Madrid y alrededores. Cocinas, baños, albañilería, fontanería y electricidad con acabados premium. ¡Pide tu presupuesto sin compromiso por WhatsApp!">
+    <meta name="keywords" content="reformas en madrid, reformas integrales madrid, reformas de baños madrid, reformas de cocinas madrid, empresa de reformas madrid">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader / Splash Screen -->
+    <div class="preloader-overlay" id="preloader">
+        <div class="preloader-content">
+            <!-- Animated Construction & Reform Logo -->
+            <div class="preloader-visual">
+                <svg class="preloader-svg" viewBox="0 0 100 100" width="120" height="120">
+                    <!-- Architectural grid/blueprint lines -->
+                    <g class="blueprint-lines">
+                        <line x1="5" y1="50" x2="95" y2="50" stroke="rgba(155, 93, 229, 0.18)" stroke-width="0.5" stroke-dasharray="2 2" />
+                        <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(155, 93, 229, 0.18)" stroke-width="0.5" stroke-dasharray="2 2" />
+                        <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(155, 93, 229, 0.12)" stroke-width="0.5" stroke-dasharray="3 3" />
+                        <circle cx="50" cy="50" r="25" fill="none" stroke="rgba(155, 93, 229, 0.08)" stroke-width="0.5" stroke-dasharray="2 2" />
+                    </g>
+
+                    <!-- Masonry Trowel Stroke (grouting cement line) -->
+                    <path class="trowel-stroke" d="M15 80 L85 80" fill="none" stroke="url(#preloader-cement-gradient)" stroke-width="3" stroke-linecap="round" />
+
+                    <!-- Blueprint House Outline drawing itself -->
+                    <path class="house-outline" d="M25 80 V48 L50 24 L75 48 V80 Z" fill="none" stroke="url(#preloader-house-gradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path class="house-details" d="M44 80 V62 H56 V80 M38 42 H62 V50 H38 Z" fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <!-- Paint Stroke left by paint roller -->
+                    <path class="paint-stroke" d="M30 46 C 40 38, 60 38, 70 46" fill="none" stroke="url(#preloader-paint-gradient)" stroke-width="14" stroke-linecap="round" opacity="0" />
+
+                    <!-- Animated Paint Roller tool -->
+                    <g class="tool-paint-roller">
+                        <!-- Roller metal frame and handle -->
+                        <path d="M50 74 V62 H44 V50" fill="none" stroke="#e0d4f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <!-- Roller sponge Cylinder -->
+                        <rect x="34" y="45" width="20" height="7" rx="1.5" fill="url(#preloader-roller-gradient)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5" />
+                    </g>
+
+                    <!-- Animated Masonry Trowel tool -->
+                    <g class="tool-trowel">
+                        <!-- Trowel handle -->
+                        <path d="M22 84 L18 88" fill="none" stroke="#ffb703" stroke-width="2.5" stroke-linecap="round" />
+                        <!-- Trowel metal blade -->
+                        <polygon points="20 83, 27 75, 34 83, 25 87" fill="#ffffff" stroke="#9B5DE5" stroke-width="0.8" />
+                    </g>
+
+                    <defs>
+                        <!-- Custom Linear Gradients for Premium Glow -->
+                        <linearGradient id="preloader-house-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#9B5DE5" />
+                            <stop offset="100%" stop-color="#7C3AED" />
+                        </linearGradient>
+                        <linearGradient id="preloader-paint-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="rgba(155, 93, 229, 0.85)" />
+                            <stop offset="100%" stop-color="rgba(124, 58, 237, 0.85)" />
+                        </linearGradient>
+                        <linearGradient id="preloader-roller-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#9B5DE5" />
+                            <stop offset="100%" stop-color="#7C3AED" />
+                        </linearGradient>
+                        <linearGradient id="preloader-cement-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="rgba(16, 185, 129, 0)" />
+                            <stop offset="50%" stop-color="rgba(16, 185, 129, 0.75)" />
+                            <stop offset="100%" stop-color="rgba(16, 185, 129, 0)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Brand Typography -->
+            <div class="preloader-brand">genissreform</div>
+            <div class="preloader-tagline">Construyendo tus deseos</div>
+            
+            <!-- Loading Indicator -->
+            <div class="preloader-progress-bar">
+                <div class="preloader-progress-fill" id="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo Block: lila background, white text -->
+            <a href="#" class="brand-logo-badge" id="btn-logo">
+                <span class="brand-name">genissreform</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#espacios" class="nav-link">Espacios</a></li>
+                    <li><a href="#antes-despues" class="nav-link">Antes/Después</a></li>
+                    <li><a href="#proceso" class="nav-link">Proceso</a></li>
+                    <li><a href="#faq" class="nav-link">Preguntas</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions (WhatsApp and CTA) -->
+            <div class="header-actions">
+                <a href="https://wa.me/34642689272" class="wa-quick-contact" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp">
+                    <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    </svg>
+                    <span class="wa-num">+34 642 68 92 72</span>
+                </a>
+                <a href="#contacto" class="btn btn-primary" id="header-cta">
+                    <span>Pedir Presupuesto</span>
+                    <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <!-- Hamburger menu button -->
+            <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir Menú">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <div class="brand-logo-badge">
+                <span class="brand-name">genissreform</span>
+            </div>
+            <button class="drawer-close" id="drawer-close-btn" aria-label="Cerrar Menú">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <ul>
+                <li><a href="#servicios" class="drawer-link">Servicios</a></li>
+                <li><a href="#espacios" class="drawer-link">Espacios que Transformamos</a></li>
+                <li><a href="#antes-despues" class="drawer-link">Antes / Después</a></li>
+                <li><a href="#proceso" class="drawer-link">Nuestro Proceso</a></li>
+                <li><a href="#faq" class="drawer-link">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" class="drawer-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="https://wa.me/34642689272" class="wa-drawer-btn" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                </svg>
+                <span>Preguntar por WhatsApp</span>
+            </a>
+            <p class="drawer-tel">Tlf: +34 642 68 92 72</p>
+        </div>
+    </div>
+    
+    <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-accent"></div>
+            <div class="section-container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-accent">✨ Reformas de Confianza en Madrid</div>
+                    <h1 class="hero-title animate-slide-in">
+                        Reformas integrales en <span class="text-gradient">Madrid</span> con estilo, precisión y resultados
+                    </h1>
+                    <p class="hero-subtitle">
+                        En <strong>genissreform</strong> realizamos reformas de pisos, baños, cocinas, locales y oficinas con soluciones completas de albañilería, pintura, fontanería, electricidad y acabados profesionales.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-main">
+                            <span>Solicitar presupuesto</span>
+                            <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="https://wa.me/34642689272" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer" id="hero-cta-wa">
+                            <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            </svg>
+                            <span>Hablar por WhatsApp</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">Gratis</span>
+                            <span class="stat-text">Presupuesto sin compromiso</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2 Años</span>
+                            <span class="stat-text">Garantía en trabajos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Madrid</span>
+                            <span class="stat-text">Y alrededores</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="image-wrapper glass-panel">
+                        <img src="assets/images/hero_interior.png" alt="Reforma integral premium en Madrid" class="hero-img">
+                        <!-- Floating Badge -->
+                        <div class="floating-badge shadow-lg">
+                            <div class="badge-icon">💼</div>
+                            <div class="badge-text">
+                                <span class="badge-title">Presupuesto Rápido</span>
+                                <span class="badge-desc">Atención por WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Block (Beneficios) -->
+        <section class="trust-section">
+            <div class="section-container">
+                <div class="trust-grid">
+                    <!-- Benefit 1 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                        </div>
+                        <h3 class="trust-title">Presupuesto sin compromiso</h3>
+                        <p class="trust-desc">Valoramos tu reforma de forma gratuita y te entregamos un presupuesto detallado sin coste alguno.</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        </div>
+                        <h3 class="trust-title">Atención rápida por WhatsApp</h3>
+                        <p class="trust-desc">Respuesta ágil y directa. Envíanos ideas de tu proyecto y resolveremos tus dudas en minutos.</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <h3 class="trust-title">Reformas Integrales</h3>
+                        <p class="trust-desc">Gestionamos todo: desde la planificación inicial y demolición hasta los últimos detalles de pintura y carpintería.</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+                        </div>
+                        <h3 class="trust-title">Soluciones a Medida</h3>
+                        <p class="trust-desc">Nos adaptamos a tu presupuesto y necesidades reales de espacio con planos y asesoría técnica especializada.</p>
+                    </div>
+                    <!-- Benefit 5 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3 class="trust-title">Acabados Profesionales</h3>
+                        <p class="trust-desc">Exigencia milimétrica. Trabajamos solo con profesionales experimentados en cada gremio de la construcción.</p>
+                    </div>
+                    <!-- Benefit 6 -->
+                    <div class="trust-card">
+                        <div class="trust-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <h3 class="trust-title">Servicio en todo Madrid</h3>
+                        <p class="trust-desc">Desplazamiento ágil a cualquier punto de Madrid capital y municipios de la comunidad autónoma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="servicios">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestros Servicios Profesionales</span>
+                    <h2 class="section-title">Soluciones Completas para tu Reforma</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">Garantizamos acabados excelentes, presupuestos desglosados y cumplimiento estricto de plazos con 2 años de garantía en todos los trabajos en Madrid y alrededores.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1: Reformas Integrales -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/hero_interior.png" alt="Reformas integrales en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Reformas integrales</h3>
+                            <p class="service-card-desc">Transformamos viviendas y locales con una gestión completa de la obra, cuidando planificación, acabados y cada detalle del proyecto.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Reformas de Baños -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/bathroom_reform.png" alt="Reformas de baños en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h16M12 14v4M12 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM8 2h8a2 2 0 0 1 2 2v8H6V4a2 2 0 0 1 2-2z"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Reformas de baños</h3>
+                            <p class="service-card-desc">Renovamos baños con diseños modernos, platos de ducha, mamparas, alicatados y soluciones funcionales para el día a día.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Reformas de Cocinas -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/kitchen_reform.png" alt="Reformas de cocinas en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="9" r="1"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="15" r="1"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Reformas de cocinas</h3>
+                            <p class="service-card-desc">Diseñamos cocinas prácticas y elegantes, optimizando distribución, iluminación, encimeras, mobiliario y acabados.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Locales y oficinas -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/office_reform.png" alt="Reformas de locales y oficinas en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 7V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M5 7h14v14H5V7z"/><path d="M9 11h6M9 15h6"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Locales y oficinas</h3>
+                            <p class="service-card-desc">Adaptamos espacios comerciales y oficinas para mejorar imagen, funcionalidad y experiencia del cliente.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Albañilería y pladur -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/pladur_reform.png" alt="Albañilería y pladur en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Albañilería y pladur</h3>
+                            <p class="service-card-desc">Realizamos tabiques, techos, trasdosados, divisiones interiores y trabajos de albañilería con acabado profesional.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Pintura y acabados -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/painting_reform.png" alt="Pintura y acabados en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="6" rx="1"/><path d="M6 9v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9M12 12v9"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Pintura y acabados</h3>
+                            <p class="service-card-desc">Pintura interior, alisado de paredes, eliminación de gotelé y acabados decorativos para renovar cualquier estancia.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 7: Fontanería y electricidad -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/utility_reform.png" alt="Fontanería y electricidad en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Fontanería y electricidad</h3>
+                            <p class="service-card-desc">Instalaciones y mejoras de fontanería, electricidad e iluminación integradas dentro del proyecto de reforma.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 8: Carpintería, suelos y tarima -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/woodwork_reform.png" alt="Carpintería, suelos y tarima en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 12h14M3 6h18M3 18h18"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Carpintería, suelos y tarima</h3>
+                            <p class="service-card-desc">Instalación de suelos, tarima, puertas, rodapiés y soluciones de carpintería para dar calidez y calidad al espacio.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 9: Humedades e impermeabilización -->
+                    <div class="service-card">
+                        <div class="service-card-image-box">
+                            <img src="assets/images/waterproof_reform.png" alt="Humedades e impermeabilización en Madrid" class="service-card-img">
+                            <div class="service-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div class="service-card-shine"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Humedades e impermeabilización</h3>
+                            <p class="service-card-desc">Tratamos humedades, goteras y filtraciones con soluciones pensadas para proteger viviendas, terrazas y cubiertas.</p>
+                            <a href="#contacto" class="service-card-link">
+                                <span>Pide información</span>
+                                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spaces We Transform Section -->
+        <section class="spaces-section" id="espacios">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Espacios que Transformamos</span>
+                    <h2 class="section-title">Resultados Profesionales para cada Lugar</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">Adaptamos nuestro equipo y metodologías según las particularidades de cada tipo de inmueble.</p>
+                </div>
+                
+                <div class="spaces-grid">
+                    <div class="space-card">
+                        <div class="space-title">Pisos y Casas</div>
+                        <div class="space-desc">Rediseño integral de viviendas optimizando la distribución de la luz natural y el confort diario.</div>
+                    </div>
+                    <div class="space-card">
+                        <div class="space-title">Viviendas Unifamiliares</div>
+                        <div class="space-desc">Reforma y acondicionamiento interior y exterior para chalets y casas aisladas con soluciones integrales.</div>
+                    </div>
+                    <div class="space-card">
+                        <div class="space-title">Locales Comerciales</div>
+                        <div class="space-desc">Reformas enfocadas en captar clientes, optimizando flujos de paso y cumpliendo normativas municipales de actividad.</div>
+                    </div>
+                    <div class="space-card">
+                        <div class="space-title">Oficinas Modernas</div>
+                        <div class="space-desc">Redistribuciones con pladur y mamparas acristaladas para crear entornos corporativos productivos y limpios.</div>
+                    </div>
+                    <div class="space-card">
+                        <div class="space-title">Baños de Diseño</div>
+                        <div class="space-desc">Renovación completa del aseo integrando platos de ducha extraplanos, mamparas a medida y griferías empotradas.</div>
+                    </div>
+                    <div class="space-card">
+                        <div class="space-title">Cocinas Funcionales</div>
+                        <div class="space-desc">El núcleo del hogar renovado con mobiliario a medida de gran capacidad y encimeras de alta resistencia al calor.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before and After Section -->
+        <section class="before-after-section" id="antes-despues">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Garantía Visual</span>
+                    <h2 class="section-title">El Impacto del Antes y el Después</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">Casos reales de transformación en Madrid. Selecciona una pestaña y desliza la barra central para comparar el cambio radical de acabados.</p>
+                </div>
+                
+                <!-- Tab Selector above grid -->
+                <div class="slider-tabs-container">
+                    <button class="slider-tab active" data-tab="salon" data-before="assets/images/before_living.png" data-after="assets/images/hero_interior.png" data-title="Reforma Integral de Salón-Comedor" data-intro="Este proyecto en Madrid es un claro reflejo de nuestra metodología de trabajo. Rediseñamos un espacio oscuro y compartimentado para crear un hogar funcional, luminoso y con acabados de alta gama." data-feat-1="<strong>Concepto Abierto:</strong> Demolición de tabiquería para integrar la estancia, maximizando la luz natural." data-feat-2="<strong>Carpintería y Suelos:</strong> Suelo laminado de alta resistencia AC5 con subcapa aislante y puertas lacadas." data-feat-3="<strong>Iluminación e Instalaciones:</strong> Falsos techos de pladur con iluminación led indirecta empotrada." data-feat-4="<strong>Pintura y Aislamiento:</strong> Alisado de paredes eliminando gotelé y trasdosado termoacústico perimetral." data-time="4 Semanas">Salón-Comedor</button>
+                    
+                    <button class="slider-tab" data-tab="cocina" data-before="assets/images/before_kitchen.png" data-after="assets/images/kitchen_reform.png" data-title="Diseño y Reforma de Cocina Premium" data-intro="Renovamos por completo esta cocina para lograr la máxima ergonomía de trabajo y una estética de vanguardia integrada." data-feat-1="<strong>Isla Central:</strong> Creación de una espectacular isla desayunadora con encimera porcelánica de mármol." data-feat-2="<strong>Mobiliario a Medida:</strong> Armarios encastrados de alta capacidad con sistema push de cierre amortiguado." data-feat-3="<strong>Iluminación de Trabajo:</strong> Luces led encastradas bajo armarios para facilitar la preparación de alimentos." data-feat-4="<strong>Redes Nuevas:</strong> Instalación de fontanería multicapa y circuito de electricidad independiente para electrodomésticos." data-time="3 Semanas">Cocina Moderna</button>
+                    
+                    <button class="slider-tab" data-tab="bano" data-before="assets/images/before_bathroom.png" data-after="assets/images/bathroom_reform.png" data-title="Reforma de Baño Spa de Lujo" data-intro="Transformamos un baño antiguo y húmedo en un oasis de relajación y diseño con platos de ducha a ras de suelo y griferías empotradas." data-feat-1="<strong>Plato de Carga Mineral:</strong> Sustitución de bañera por plato antideslizante extraplano y mampara de vidrio templado." data-feat-2="<strong>Grifería Empotrada:</strong> Monomandos en negro mate empotrados a pared para un acabado minimalista y limpio." data-feat-3="<strong>Sanitarios Suspendidos:</strong> Inodoro suspendido con cisterna oculta en tabique para optimizar el espacio." data-feat-4="<strong>Tratamiento Antihumedad:</strong> Alicatado con material porcelánico rectificado e impermeabilización líquida en juntas." data-time="2 Semanas">Baño Spa</button>
+                </div>
+
+                <div class="before-after-grid">
+                    <!-- Left: Interactive Slider -->
+                    <div class="before-after-visual-card glass-panel">
+                        <div class="slider-container" id="before-after-slider">
+                            <!-- Before layer (background) -->
+                            <div class="image-layer before-layer">
+                                <img src="assets/images/before_living.png" alt="Antes de la reforma" class="slider-img" id="slider-before-img">
+                                <span class="slider-label label-before">ESPACIO ORIGINAL (ANTES)</span>
+                            </div>
+                            
+                            <!-- After layer (resizable overlay) -->
+                            <div class="image-layer after-layer" id="after-layer">
+                                <img src="assets/images/hero_interior.png" alt="Después de la reforma" class="slider-img" id="slider-after-img">
+                                <span class="slider-label label-after">PROYECTO TERMINADO (DESPUÉS)</span>
+                            </div>
+                            
+                            <!-- Drag Handle -->
+                            <div class="slider-handle" id="slider-handle">
+                                <div class="handle-line"></div>
+                                <div class="handle-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="8 5 3 12 8 19"></polyline><polyline points="16 5 21 12 16 19"></polyline></svg>
+                                </div>
+                                <div class="handle-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Dynamic Details Card -->
+                    <div class="before-after-details glass-panel">
+                        <h3 class="ba-details-title" id="ba-title">Reforma Integral de Salón-Comedor</h3>
+                        <p class="ba-details-intro" id="ba-intro">Este proyecto en Madrid es un claro reflejo de nuestra metodología de trabajo. Rediseñamos un espacio oscuro y compartimentado para crear un hogar funcional, luminoso y con acabados de alta gama.</p>
+                        
+                        <div class="ba-details-features">
+                            <div class="ba-feature-item">
+                                <span class="ba-feature-icon">✨</span>
+                                <div class="ba-feature-text" id="ba-feat-1">
+                                    <strong>Concepto Abierto:</strong> Demolición de tabiquería para integrar la estancia, maximizando la sensación de amplitud y la luz natural.
+                                </div>
+                            </div>
+                            <div class="ba-feature-item">
+                                <span class="ba-feature-icon">🪵</span>
+                                <div class="ba-feature-text" id="ba-feat-2">
+                                    <strong>Carpintería y Suelos:</strong> Instalación de suelo laminado de alta resistencia AC5 con subcapa aislante y puertas lacadas en blanco.
+                                </div>
+                            </div>
+                            <div class="ba-feature-item">
+                                <span class="ba-feature-icon">💡</span>
+                                <div class="ba-feature-text" id="ba-feat-3">
+                                    <strong>Iluminación e Instalaciones:</strong> Falsos techos de pladur con iluminación led indirecta empotrada y renovación eléctrica completa.
+                                </div>
+                            </div>
+                            <div class="ba-feature-item">
+                                <span class="ba-feature-icon">🌱</span>
+                                <div class="ba-feature-text" id="ba-feat-4">
+                                    <strong>Pintura y Aislamiento:</strong> Alisado de paredes eliminando el gotelé original y trasdosado termoacústico perimetral.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ba-metrics-row">
+                            <div class="ba-metric-box">
+                                <span class="ba-metric-num" id="ba-time">4 Semanas</span>
+                                <span class="ba-metric-label">Plazo de ejecución</span>
+                            </div>
+                            <div class="ba-metric-box">
+                                <span class="ba-metric-num">2 Años</span>
+                                <span class="ba-metric-label">Garantía total</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contacto" class="btn btn-primary btn-full shadow-sm">
+                            <span>Quiero una transformación para mi hogar</span>
+                            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Trabajo -->
+        <section class="process-section" id="proceso">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Metodología de Obra</span>
+                    <h2 class="section-title">Nuestro Proceso en 5 Pasos</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">Nos encargamos de todo de principio a fin, manteniendo la transparencia total en cada etapa de la reforma.</p>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="timeline-progress-grow"></div>
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-num-box">
+                            <span class="step-num">01</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Cuéntanos tu proyecto</h3>
+                            <p class="step-desc">Contáctanos por WhatsApp o formulario. Detállanos tus necesidades iniciales, el tipo de inmueble y tu idea.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-num-box">
+                            <span class="step-num">02</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Valoramos tus necesidades</h3>
+                            <p class="step-desc">Agendamos una visita al inmueble en Madrid sin coste alguno para tomar mediciones precisas y asesorarte.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-num-box">
+                            <span class="step-num">03</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Preparamos propuesta</h3>
+                            <p class="step-desc">Elaboramos una propuesta técnica detallada con desglose por gremios (albañilería, fontanería, pintura) y presupuesto cerrado.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-num-box">
+                            <span class="step-num">04</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Ejecutamos la reforma</h3>
+                            <p class="step-desc">Comienza la obra con la supervisión de un responsable técnico que coordina los gremios y te reporta el avance.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="step-num-box">
+                            <span class="step-num">05</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">Entrega renovada</h3>
+                            <p class="step-desc">Limpieza profunda de fin de obra y entrega del inmueble. Revisamos juntos cada rincón para garantizar satisfacción.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle CTA (WhatsApp Promo) -->
+        <section class="mid-cta-section">
+            <div class="mid-cta-bg"></div>
+            <div class="section-container">
+                <div class="mid-cta-content glass-panel">
+                    <h2 class="mid-cta-title">¿Pensando en reformar tu vivienda o tu local en Madrid?</h2>
+                    <p class="mid-cta-subtitle">Solicita hoy tu presupuesto gratuito. Te atendemos por WhatsApp de forma rápida, directa y sin intermediarios.</p>
+                    <div class="mid-cta-buttons">
+                        <a href="https://wa.me/34642689272" class="btn btn-primary btn-lg shine-effect" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            </svg>
+                            <span>Escríbenos por WhatsApp</span>
+                        </a>
+                        <a href="#contacto" class="btn btn-border-white btn-lg">Solicitar Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios (Provisionales / Demo) -->
+        <section class="testimonials-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Clientes Satisfechos</span>
+                    <h2 class="section-title">Opiniones de Nuestros Proyectos</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">La seriedad y la calidad son nuestras máximas prioridades. Presentamos valoraciones de ejemplo listas para enlazar a perfiles reales.</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card glass-panel">
+                        <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testi-text">"Hicimos la reforma integral de nuestro piso en Madrid con genissreform y no podemos estar más contentos. Acabados impecables y cumplieron los tiempos de obra pactados al detalle. Muy profesionales."</p>
+                        <div class="testi-author">
+                            <div class="author-info">
+                                <span class="author-name">Carlos M.</span>
+                                <span class="author-meta">Reforma Piso en Madrid Centro (Demo)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card glass-panel">
+                        <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testi-text">"Excelente comunicación desde el primer contacto por WhatsApp. Nos reformaron el baño y la cocina por completo. Nos aconsejaron en la distribución y el resultado es precioso y muy luminoso."</p>
+                        <div class="testi-author">
+                            <div class="author-info">
+                                <span class="author-name">Laura S.</span>
+                                <span class="author-meta">Reforma Cocina y Baño en Móstoles (Demo)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card glass-panel">
+                        <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testi-text">"Buscaba una empresa seria de reformas para mi local de oficinas y genissreform superó mis expectativas. Limpieza, orden durante la obra de pladur y electricidad y un trato excelente."</p>
+                        <div class="testi-author">
+                            <div class="author-info">
+                                <span class="author-name">Alberto G.</span>
+                                <span class="author-meta">Acondicionamiento Oficina en Alcobendas (Demo)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-disclaimer">
+                    <p>* Estas opiniones forman parte de una demostración de diseño web. El cliente final aportará sus valoraciones verificadas tras la publicación oficial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Team Section -->
+        <section class="team-section">
+            <div class="section-container team-grid">
+                <div class="team-visual">
+                    <div class="image-wrapper glass-panel">
+                        <img src="assets/images/reform_team.png" alt="Equipo profesional de genissreform" class="team-img">
+                    </div>
+                </div>
+                <div class="team-content">
+                    <span class="section-tag">Equipo de Confianza</span>
+                    <h2 class="section-title">Profesionales Coordinados para un Resultado Excelente</h2>
+                    <p class="team-text">
+                        En **genissreform** sabemos que una reforma es un proceso importante para ti. Por eso, no subcontratamos de forma descontrolada: contamos con especialistas propios en albañilería, fontanería, carpintería e instalaciones eléctricas que trabajan de forma sincronizada bajo una dirección técnica seria.
+                    </p>
+                    <div class="team-bullets">
+                        <div class="bullet-item">
+                            <span class="bullet-check">✓</span>
+                            <span><strong>Seguridad Técnica:</strong> Cumplimos estrictamente las normativas locales y la seguridad en obra.</span>
+                        </div>
+                        <div class="bullet-item">
+                            <span class="bullet-check">✓</span>
+                            <span><strong>Puntualidad:</strong> Entregas planificadas con penalizaciones por retraso en contrato si es necesario.</span>
+                        </div>
+                        <div class="bullet-item">
+                            <span class="bullet-check">✓</span>
+                            <span><strong>Limpieza:</strong> Cuidamos el portal de vecinos y dejamos tu espacio listo para entrar a vivir.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Dudas Frecuentes</span>
+                    <h2 class="section-title">Resolvemos tus Preguntas</h2>
+                    <div class="laser-level-divider"></div>
+                    <p class="section-subtitle">Información clara y transparente para que inicies tu proyecto de reforma en Madrid con total tranquilidad.</p>
+                </div>
+                
+                <div class="faq-accordion-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿Hacéis presupuestos sin compromiso?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>Sí, por supuesto. Realizamos presupuestos completamente detallados y desglosados sin coste alguno para ti. Nos desplazamos al inmueble en Madrid, tomamos mediciones y valoramos tus ideas sin cobrarte nada.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿Trabajáis en todo Madrid y alrededores?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>Sí, damos servicio en toda la capital de Madrid y municipios cercanos de la Comunidad (Alcobendas, Pozuelo, Las Rozas, Móstoles, Alcorcón, Leganés, Getafe, Alcalá de Henares, etc.). Consúltanos por tu zona sin compromiso.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿Qué tipo de reformas realizáis?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>Realizamos reformas integrales de viviendas, chalets, locales comerciales y oficinas. También realizamos reformas parciales especializadas como cocinas, cuartos de baño, adecuaciones de pladur, pintura lisa y humedades.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿Podéis reformar de forma independiente mi baño o cocina?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>Totalmente. Contamos con equipos de fontanería y alicatadores muy especializados listos para realizar la reforma completa de tu cocina o baño con rapidez, minimizando las molestias en tu vivienda habitual.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿También hacéis pintura, fontanería o electricidad por separado?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>Sí, nuestro equipo es multidisciplinar. Ofrecemos servicios específicos de fontanería, electricidad certificada con emisión de boletines, albañilería general, pintura lisa quitando gotelé y carpintería de madera (puertas, tarimas, etc.).</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 6 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>¿Cómo puedo solicitar información o un presupuesto?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p>La forma más rápida es pulsar el botón de WhatsApp y escribirnos de forma directa al +34 642 68 92 72. O si lo prefieres, puedes rellenar nuestro formulario de contacto final en esta web y te llamaremos en menos de 24 horas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contacto">
+            <div class="section-container contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contacto Directo</span>
+                    <h2 class="section-title">¡Comienza Hoy tu Reforma!</h2>
+                    <p class="contact-subtitle">Pide tu presupuesto personalizado. Estamos en Madrid para ayudarte a dar vida a tus espacios.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="detail-text">
+                                <span class="detail-label">Teléfono y WhatsApp</span>
+                                <a href="tel:+34642689272" class="detail-val">+34 642 68 92 72</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="detail-text">
+                                <span class="detail-label">Zona de Servicio</span>
+                                <span class="detail-val">Madrid y Alrededores</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/34642689272" class="wa-large-cta shadow-md" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        </svg>
+                        <div class="wa-large-text">
+                            <span class="wa-large-title">Pulsa aquí para WhatsApp</span>
+                            <span class="wa-large-sub">¡Atención y presupuesto rápido!</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="contact-form-wrapper glass-panel">
+                    <h3 class="form-title">¿Prefieres que te llamemos?</h3>
+                    <p class="form-subtitle">Completa este breve formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+                    
+                    <form id="reform-contact-form" action="#" class="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Nombre completo</label>
+                            <input type="text" id="form-name" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-phone">Teléfono de contacto</label>
+                                <input type="tel" id="form-phone" placeholder="Ej. 600 000 000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-city">Población (Madrid)</label>
+                                <input type="text" id="form-city" placeholder="Ej. Alcorcón" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-service">Servicio requerido</label>
+                            <select id="form-service" required>
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="integral">Reforma Integral de Vivienda</option>
+                                <option value="cocina">Reforma de Cocina</option>
+                                <option value="bano">Reforma de Baño</option>
+                                <option value="albañileria">Albañilería y Pladur</option>
+                                <option value="pintura">Pintura y Alisado</option>
+                                <option value="otros">Otros (fontanería, humedades, etc.)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Breve descripción del proyecto</label>
+                            <textarea id="form-message" rows="4" placeholder="Ej. Quiero reformar la cocina, cambiar encimera y alicatados..."></textarea>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="form-privacy" required checked>
+                            <label for="form-privacy">Acepto el uso de mis datos para esta demostración de diseño web. (Demo)</label>
+                        </div>
+                        <div class="form-demo-note">📝 *Este formulario es una demostración interactiva de captación de leads.*</div>
+                        
+                        <div class="form-actions-row">
+                            <button type="submit" class="btn btn-primary" id="btn-submit-form" style="flex: 1;">
+                                <span>Enviar Formulario</span>
+                                <svg class="icon-send" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                            <a href="https://wa.me/34642689272" class="btn btn-secondary wa-form-shortcut" target="_blank" rel="noopener noreferrer" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-color: var(--secondary-wa); color: var(--text-main);">
+                                <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="color: var(--secondary-wa);">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                                </svg>
+                                <span>WhatsApp Directo</span>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="form-success-message" id="form-success-msg">
+                        <div class="success-icon">✓</div>
+                        <h4>¡Solicitud Recibida!</h4>
+                        <p>Nos pondremos en contacto contigo lo antes posible para valorar tu proyecto de reforma en Madrid. ¡Gracias por confiar en genissreform!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="section-container footer-grid">
+            <div class="footer-brand-col">
+                <div class="brand-logo-badge">
+                    <span class="brand-name">genissreform</span>
+                </div>
+                <p class="footer-about">
+                    Empresa de reformas premium, comprometida con la precisión, el diseño contemporáneo y los acabados impecables en Madrid.
+                </p>
+                <div class="footer-wa-info">
+                    <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    </svg>
+                    <span>+34 642 68 92 72</span>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Reformas Integrales</a></li>
+                    <li><a href="#servicios">Reformas de Baños</a></li>
+                    <li><a href="#servicios">Reformas de Cocinas</a></li>
+                    <li><a href="#servicios">Albañilería y Pintura</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Zona de Cobertura</h4>
+                <ul>
+                    <li><span class="footer-loc">Madrid Capital</span></li>
+                    <li><span class="footer-loc">Alcobendas y Pozuelo</span></li>
+                    <li><span class="footer-loc">Móstoles y Alcorcón</span></li>
+                    <li><span class="footer-loc">Madrid Comunidad completa</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-legal-col">
+                <h4>Información Legal</h4>
+                <p class="footer-legal-desc">Esta web es una versión de demostración y diseño premium preparada especialmente para genissreform.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Aviso Legal</a>
+                    <a href="#" class="legal-link">Política de Privacidad</a>
+                    <a href="#" class="legal-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 genissreform. Todos los derechos reservados. | Diseñado con estilo y precisión para reformas de alta gama en Madrid.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/34642689272" class="wa-floating-btn" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.588 1.977 14.113.953 11.5.953c-5.44 0-9.866 4.372-9.87 9.802 0 1.764.47 3.488 1.359 5.022L1.933 20.25l4.714-1.096zM17.47 14.9c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+        <span class="wa-tooltip">¿Hablamos de tu reforma?</span>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
