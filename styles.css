@@ -948,16 +948,8 @@ input, textarea, select {
     position: relative;
 }
 
-.process-timeline::before {
-    content: '';
-    position: absolute;
-    left: 40px;
-    top: 30px;
-    width: 2px;
-    height: calc(100% - 60px);
-    background: linear-gradient(to bottom, var(--primary-lila) 0%, var(--primary-violet) 50%, var(--primary-morado-deep) 100%);
-    opacity: 0.3;
-}
+.process-timeline::before { display: none; }
+.timeline-progress-grow { display: none !important; }
 
 .process-step {
     display: flex;
@@ -2658,5 +2650,304 @@ body.preloader-active {
 }
 
 
+/* ==========================================================================
+   24. MOBILE POLISH — Comprehensive responsive refinements
+   Fix overflow, spacing, hero, timeline, forms, footer and CTAs on phones.
+   ========================================================================== */
 
+/* Prevent horizontal scroll caused by overflowing decorative elements */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+    /* Header: tighter padding & responsive logo */
+    .main-header { padding: 12px 0; }
+    .header-container { padding: 0 16px; }
+    .brand-name { font-size: 1.15rem; }
+    .brand-logo-badge { padding: 6px 14px; }
+
+    /* Section container padding tighter */
+    .section-container { padding: 0 16px; }
+
+    /* Hero spacing */
+    .hero-section {
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+    .hero-title { font-size: 2.2rem !important; letter-spacing: -0.5px; }
+    .hero-subtitle { font-size: 1rem; margin-bottom: 28px; }
+    .hero-ctas { gap: 12px; margin-bottom: 32px; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    .stat-number { font-size: 1.6rem; }
+    .stat-text { font-size: 0.82rem; }
+
+    /* Hero image: shorter, contained, badge inside bounds */
+    .hero-img { height: 320px; }
+    .hero-visual { max-width: 100%; padding: 0 4px; }
+    .image-wrapper { padding: 6px; }
+    .floating-badge {
+        left: 8px;
+        right: 8px;
+        bottom: 12px;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+    .badge-icon { font-size: 1.4rem; }
+    .badge-title { font-size: 0.95rem; }
+    .badge-desc { font-size: 0.78rem; }
+
+    /* Section headers */
+    .section-header { margin: 0 auto 40px; }
+    .section-title { font-size: 1.85rem !important; }
+    .section-subtitle { font-size: 0.95rem; }
+    .section-tag { font-size: 0.78rem; }
+
+    /* Trust cards a bit tighter */
+    .trust-card { padding: 26px; }
+    .trust-title { font-size: 1.15rem; }
+    .trust-desc { font-size: 0.92rem; }
+
+    /* Spaces cards */
+    .space-card { padding: 28px; }
+    .space-title { font-size: 1.2rem; }
+
+    /* Service cards */
+    .service-card-image-box { height: 170px; }
+    .service-card-body { padding: 20px; }
+
+    /* Slider tabs: wrap nicely */
+    .slider-tabs-container {
+        gap: 10px;
+        margin-bottom: 28px;
+        padding: 0 8px;
+    }
+    .slider-tab {
+        padding: 10px 18px;
+        font-size: 0.88rem;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    /* Before/after labels smaller, no overlap */
+    .slider-label { font-size: 0.7rem; padding: 4px 10px; bottom: 12px; }
+    .label-before { right: 12px; }
+    .label-after { left: 12px; }
+    .handle-button { width: 38px; height: 38px; }
+
+    /* Process timeline: rebuild for mobile (vertical, line on the left of compact step) */
+    .process-timeline { gap: 20px; }
+    .process-timeline::before {
+        left: 24px;
+        top: 24px;
+        height: calc(100% - 48px);
+    }
+    .process-step {
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .step-num-box {
+        width: 50px;
+        height: 50px;
+    }
+    .step-num { font-size: 1.1rem; }
+    .step-content { padding: 20px; }
+    .step-title { font-size: 1.1rem; }
+    .step-desc { font-size: 0.9rem; }
+    /* Sync the JS-controlled vertical progress with new left offset */
+    .timeline-progress-grow { left: 24px !important; top: 24px !important; }
+
+    /* Mid CTA */
+    .mid-cta-section { padding: 70px 0; }
+    .mid-cta-title { font-size: 1.6rem !important; }
+    .mid-cta-subtitle { font-size: 1rem; margin-bottom: 28px; }
+    .mid-cta-content { padding: 36px 20px; }
+    .mid-cta-buttons { flex-direction: column; gap: 12px; }
+    .mid-cta-buttons .btn { width: 100%; }
+
+    /* Testimonials */
+    .testimonial-card { padding: 28px; }
+    .testi-text { font-size: 0.95rem; }
+
+    /* Team section image */
+    .team-img { height: 280px; }
+    .team-content .section-title { text-align: center; }
+    .team-text { font-size: 0.98rem; text-align: left; }
+
+    /* FAQ */
+    .faq-trigger { padding: 18px 20px; font-size: 1rem; gap: 14px; }
+    .faq-panel p { padding: 0 20px 20px; font-size: 0.92rem; }
+
+    /* Contact */
+    .contact-section { padding: 70px 0 !important; }
+    .contact-info .section-title { text-align: center; }
+    .contact-subtitle { text-align: center; }
+    .contact-details { gap: 22px; margin-bottom: 32px; }
+    .detail-icon { width: 44px; height: 44px; flex-shrink: 0; }
+    .detail-val { font-size: 1.1rem; word-break: break-word; }
+    .wa-large-cta { padding: 16px 20px; gap: 14px; }
+    .wa-large-title { font-size: 1rem; }
+    .wa-large-sub { font-size: 0.8rem; }
+    .contact-form-wrapper { padding: 28px 20px; }
+    .form-title { font-size: 1.35rem; }
+    .form-row { gap: 16px; }
+
+    /* Footer */
+    .main-footer { padding: 60px 0 24px; }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        padding-bottom: 40px;
+    }
+    .footer-brand-col { grid-column: 1 / -1; }
+    .footer-legal-col { grid-column: 1 / -1; }
+    .footer-bottom { font-size: 0.78rem; padding: 24px 16px 0; }
+
+    /* Floating WhatsApp button: smaller on mobile, doesn't cover content */
+    .wa-floating-btn {
+        width: 54px;
+        height: 54px;
+        bottom: 18px;
+        right: 18px;
+    }
+    .wa-floating-btn svg { width: 26px; height: 26px; }
+    .wa-tooltip { display: none; }
+
+    /* Preloader text sized down */
+    .preloader-brand { font-size: 1.8rem; }
+    .preloader-tagline { font-size: 0.82rem; letter-spacing: 3px; }
+}
+
+@media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .footer-brand-col, .footer-legal-col { grid-column: auto; }
+
+    .hero-stats {
+        gap: 16px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .stat-item { flex: 1 1 30%; min-width: 0; }
+
+    /* Buttons inside before-after details shouldn't overflow */
+    .before-after-details .btn { white-space: normal; line-height: 1.2; padding: 14px 18px; }
+}
+
+@media (max-width: 420px) {
+    html { font-size: 15px; }
+    .hero-title { font-size: 1.95rem !important; }
+    .section-title { font-size: 1.6rem !important; }
+    .badge-accent { font-size: 0.78rem; padding: 5px 12px; }
+    .btn-lg { padding: 14px 22px; font-size: 1rem; }
+
+    /* Hero image even shorter */
+    .hero-img { height: 260px; }
+
+    /* Make form action buttons fit */
+    .form-actions-row .btn { font-size: 0.92rem; padding: 12px 16px; }
+}
+
+/* Long URLs / words shouldn't push layout */
+p, span, a, h1, h2, h3, h4 { overflow-wrap: anywhere; }
+
+
+/* ==========================================================================
+   25. PROCESS STEPS — Lively interactive number circles
+   ========================================================================== */
+
+.step-num-box {
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    transition: transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.45),
+                box-shadow 0.45s ease,
+                background 0.4s ease,
+                border-color 0.4s ease;
+}
+
+/* Soft outer glow ring (animated on hover) */
+.step-num-box::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(155, 93, 229, 0.35) 0%, rgba(155, 93, 229, 0) 70%);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.45);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Rotating dashed orbit that appears on hover */
+.step-num-box::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    border: 1.5px dashed var(--primary-lila);
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg);
+    transition: opacity 0.35s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.step-num {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.45),
+                color 0.35s ease;
+}
+
+/* Hover (desktop) and tap (mobile) shared state */
+.process-step:hover .step-num-box,
+.step-num-box:hover,
+.step-num-box:focus-visible,
+.step-num-box:active {
+    background: linear-gradient(135deg, var(--primary-lila) 0%, var(--primary-violet) 100%);
+    border-color: transparent;
+    transform: scale(1.15) rotate(-6deg);
+    box-shadow: 0 12px 28px rgba(124, 58, 237, 0.45),
+                0 0 0 6px rgba(155, 93, 229, 0.12);
+}
+
+.process-step:hover .step-num,
+.step-num-box:hover .step-num,
+.step-num-box:active .step-num {
+    color: var(--text-white);
+    transform: scale(1.08) rotate(6deg);
+}
+
+.process-step:hover .step-num-box::before,
+.step-num-box:hover::before,
+.step-num-box:active::before {
+    opacity: 1;
+    transform: scale(1.15);
+    animation: stepPulse 1.6s ease-in-out infinite;
+}
+
+.process-step:hover .step-num-box::after,
+.step-num-box:hover::after,
+.step-num-box:active::after {
+    opacity: 0.7;
+    transform: scale(1) rotate(360deg);
+    animation: stepOrbit 6s linear infinite;
+}
+
+@keyframes stepPulse {
+    0%, 100% { transform: scale(1.1); opacity: 0.9; }
+    50% { transform: scale(1.3); opacity: 0.4; }
+}
+
+@keyframes stepOrbit {
+    from { transform: scale(1) rotate(0deg); }
+    to   { transform: scale(1) rotate(360deg); }
+}
+
+/* Touch devices: gentler tap feedback (no sticky :hover) */
+@media (hover: none) {
+    .step-num-box:active {
+        transform: scale(1.1) rotate(-4deg);
+    }
+}
 

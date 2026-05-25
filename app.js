@@ -403,39 +403,59 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMsg = document.getElementById('form-success-msg');
 
     if (contactForm && successMsg) {
+        const WA_NUMBER = '34642689272';
+
+        const serviceLabels = {
+            integral: 'Reforma Integral de Vivienda',
+            cocina: 'Reforma de Cocina',
+            bano: 'Reforma de Baño',
+            albañileria: 'Albañilería y Pladur',
+            pintura: 'Pintura y Alisado',
+            otros: 'Otros (fontanería, humedades, etc.)'
+        };
+
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Stop standard redirect
+            e.preventDefault();
 
-            // Retrieve form values
-            const name = document.getElementById('form-name').value;
-            const phone = document.getElementById('form-phone').value;
-            const city = document.getElementById('form-city').value;
-            const service = document.getElementById('form-service').value;
-            const message = document.getElementById('form-message').value;
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const city = document.getElementById('form-city').value.trim();
+            const serviceVal = document.getElementById('form-service').value;
+            const message = document.getElementById('form-message').value.trim();
 
-            // Log demo lead details for review
-            console.log('--- NUEVO LEAD RECIBIDO (DEMO WEB genissreform) ---');
-            console.log(`Nombre: ${name}`);
-            console.log(`Teléfono: ${phone}`);
-            console.log(`Población: ${city}`);
-            console.log(`Servicio: ${service}`);
-            console.log(`Mensaje: ${message}`);
-            console.log('----------------------------------------------------');
+            const serviceLabel = serviceLabels[serviceVal] || serviceVal || 'No especificado';
 
-            // Visual effects for success state
+            const lines = [
+                'Hola, me gustaría solicitar un presupuesto de reforma:',
+                '',
+                `• Nombre: ${name}`,
+                `• Teléfono: ${phone}`,
+                `• Población: ${city}`,
+                `• Servicio: ${serviceLabel}`
+            ];
+            if (message) {
+                lines.push(`• Descripción: ${message}`);
+            }
+            lines.push('', '¡Gracias!');
+
+            const waText = encodeURIComponent(lines.join('\n'));
+            const waUrl = `https://wa.me/${WA_NUMBER}?text=${waText}`;
+
+            // Open WhatsApp in a new tab/app
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+            // Show success state
             contactForm.style.opacity = '0';
             setTimeout(() => {
                 contactForm.style.display = 'none';
                 successMsg.style.display = 'flex';
                 successMsg.style.opacity = '0';
-                
-                // Triggers subtle entrance transition
+
                 setTimeout(() => {
                     successMsg.style.transition = 'opacity 0.5s ease';
                     successMsg.style.opacity = '1';
                 }, 50);
 
-                // Auto-scroll inside form wrapper to view success message perfectly on mobile
                 successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }, 300);
         });
